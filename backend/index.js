@@ -8,7 +8,13 @@ const cors = require("cors");
 const port = process.env.PORT || 4000;
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+  origin: ["https://deploy-mern-1whq.vercel.app"],
+  methods: ["POST", "GET"],
+  credentials: true
+}
+));
 
 // Database Connection With MongoDB
 mongoose.connect("mongodb+srv://dileep:dileep123@cluster0.zttmw3g.mongodb.net/e-commerce");
