@@ -11,7 +11,7 @@ import kid_banner from "./Components/Assets/banner_kids.png";
 import LoginSignup from "./Pages/LoginSignup";
 
 
-export const backend_url = 'https://shoppee-ecommerce-backend.onrender.com/';
+export const backend_url = 'https://shoppee-ecommerce-backend.onrender.com';
 export const currency = '₹';
 
 function App() {
