@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDB
-mongoose.connect("mongodb+srv://smdileep777:dileep123@cluster0.40sza.mongodb.net//e-commerce");
+mongoose.connect("mongodb+srv://smdileep777:dileep123@cluster0.40sza.mongodb.net/e-commerce");
 
 
 
