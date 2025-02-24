@@ -10,12 +10,8 @@ const port = process.env.PORT || 4000;
 app.use(express.json());
 
 // ✅ Fix CORS Issue
-app.use(cors({
-  origin: "https://shoppee-ecommerce.onrender.com", // Allow only frontend
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true
-}));
+
+app.use(cors({ origin: "*" }));
 
 // Database Connection With MongoDB
 mongoose.connect("mongodb+srv://smdileep777:dileep123@cluster0.40sza.mongodb.net/e-commerce");
